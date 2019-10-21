@@ -11,20 +11,35 @@ class TransactionQueue {
     // project task 1.1
     // Add datastructure to contain the transactions
 
+    //Datastructure to hold transctions
+    val TransQueue: Queue[Transaction] = Queue.empty[Transaction]
+    println(s"Elements of queue1 = $TransQueue")
+
     // Remove and return the first element from the queue
-    def pop: Transaction = ???
+    def pop: Transaction = {
+        val T = TransQueue.dequeue
+    }
 
     // Return whether the queue is empty
-    def isEmpty: Boolean = ???
+    def isEmpty: Boolean = {
+        !TransQueue.nonEmpty 
+    }
 
     // Add new element to the back of the queue
-    def push(t: Transaction): Unit = ???
+    def push(t: Transaction): Unit = {
+        TransQueue.enqueue(Transaction)
+    }
 
     // Return the first element from the queue without removing it
-    def peek: Transaction = ???
+    def peek: Transaction = {
+        TransQueue.head
+    }
 
     // Return an iterator to allow you to iterate over the queue
-    def iterator: Iterator[Transaction] = ???
+    def iterator: Iterator[Transaction] = {
+        TransQueue.iterator
+
+    }
 }
 
 class Transaction(val transactionsQueue: TransactionQueue,
