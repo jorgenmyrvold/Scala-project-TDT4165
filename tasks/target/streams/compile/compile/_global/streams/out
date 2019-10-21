@@ -1,4 +1,23 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/Jorgen/Google_Drive/Programmering/Scala_project/tasks/task1.scala:12:24: value elementWise is not a member of Array[Int][0m
-[0m[[0m[31merror[0m] [0m[0m        for (el <- arr.elementWise){[0m
-[0m[[0m[31merror[0m] [0m[0m                       ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/Jorgen/Google_Drive/Programmering/Scala_project/tasks/task1.scala:53:20: overloaded method constructor Thread with alternatives:[0m
+[0m[[0m[31merror[0m] [0m[0m  (x$1: String)Thread <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (x$1: Runnable)Thread[0m
+[0m[[0m[31merror[0m] [0m[0m cannot be applied to (java.util.concurrent.Callable[Unit])[0m
+[0m[[0m[31merror[0m] [0m[0m        val thrd = new Thread(fun)[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/Jorgen/Google_Drive/Programmering/Scala_project/tasks/task1.scala:62:47: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Unit[0m
+[0m[[0m[31merror[0m] [0m[0m required: java.util.concurrent.Callable[Unit][0m
+[0m[[0m[31merror[0m] [0m[0m    val thrdInc1 = init_thread(increaseCounter())[0m
+[0m[[0m[31merror[0m] [0m[0m                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/Jorgen/Google_Drive/Programmering/Scala_project/tasks/task1.scala:63:47: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Unit[0m
+[0m[[0m[31merror[0m] [0m[0m required: java.util.concurrent.Callable[Unit][0m
+[0m[[0m[31merror[0m] [0m[0m    val thrdInc2 = init_thread(increaseCounter())[0m
+[0m[[0m[31merror[0m] [0m[0m                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/Jorgen/Google_Drive/Programmering/Scala_project/tasks/task1.scala:64:21: overloaded method constructor Thread with alternatives:[0m
+[0m[[0m[31merror[0m] [0m[0m  (x$1: String)Thread <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (x$1: Runnable)Thread[0m
+[0m[[0m[31merror[0m] [0m[0m cannot be applied to (Unit)[0m
+[0m[[0m[31merror[0m] [0m[0m    val thrdPrint = new Thread(println(counter))[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0mfour errors found[0m

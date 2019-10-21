@@ -1,3 +1,5 @@
+import java.util.concurrent.Callable
+
 object Main extends App{
     // TASK 1.a
     var arr = Array.emptyIntArray
@@ -40,9 +42,30 @@ object Main extends App{
         }
     }
     println(fib_num(10))
-
+    /*
+    BigInt has no limit practical limit. It allocates as much memory as needed. In theory the size is limited to
+    Integer.MAX_VALUE bits, but the available recoursses on the machine sets the limit in pracis.
+    Int has a limitation on 32 bit which can generate values from -2^-31 to (2^31)-1
+     */
 
     // TASK 2.a
+    def init_thread(fun: Callable[Unit]) : Thread = {
+        val thrd = new Thread(fun)
+        thrd
+    }
 
-
+     */
+    // TASK 2.b
+    /*
+    var counter: Int = 0
+    def increaseCounter(): Unit = {
+        counter += 1
+    }
+    val thrdInc1 = init_thread(increaseCounter())
+    val thrdInc2 = init_thread(increaseCounter())
+    val thrdPrint = new Thread(println(counter))
+    thrdInc1.start()
+    thrdInc2.start()
+    thrdPrint.start()
+    */
 }
