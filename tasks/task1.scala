@@ -47,6 +47,50 @@ object Main extends App{
     Integer.MAX_VALUE bits, but the available recoursses on the machine sets the limit in pracis.
     Int has a limitation on 32 bit which can generate values from -2^-31 to (2^31)-1
      */
+    
+//Task 2a
+  def returnThread(body: =>Unit): Thread = {
+    val t = new Thread {
+    override def run() = body
+    }
+      t 
+  }
+
+//def increaseCounter(): Unit = this.synchronized {
+def increaseCounter(): Unit = {
+  counter.addAndGet(1)
+}
+
+
+  private var counter: AtomicInteger = new AtomicInteger(123)
+
+  val thrd1 = returnThread(increaseCounter())
+  val thrd2 = returnThread(increaseCounter())
+  val thrd3 = returnThread({println("Counter: " + counter)})
+
+  thrd1.start
+  thrd2.start
+  thrd3.start
+
+//This phenomenon is called...
+
+/*
+A situation where it can be problematic is in bank. 
+If two different accounts are trying to make a transaction to the same account simultaneously,
+they both add a new value to the same initial value. 
+This can lead to some of the money getting lost in transaction because the account balance isn't updated in-between the two transactions. 
+And one of them is transferring to the account with a wrong assumption of what the current account balance is because it hasn't been updated.
+This is also called "lost update".
+*/
+
+//Deadlock is...
+//To prevent deadlock we can...
+/*lazy val A : Int = B
+lazy val B : Int = A 
+val Ta = new Thread {println(A)}
+Ta.start()
+*/
+
 
 
 }
