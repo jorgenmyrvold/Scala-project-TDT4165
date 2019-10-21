@@ -48,24 +48,5 @@ object Main extends App{
     Int has a limitation on 32 bit which can generate values from -2^-31 to (2^31)-1
      */
 
-    // TASK 2.a
-    def init_thread(fun: Callable[Unit]) : Thread = {
-        val thrd = new Thread(fun)
-        thrd
-    }
 
-     */
-    // TASK 2.b
-    /*
-    var counter: Int = 0
-    def increaseCounter(): Unit = {
-        counter += 1
-    }
-    val thrdInc1 = init_thread(increaseCounter())
-    val thrdInc2 = init_thread(increaseCounter())
-    val thrdPrint = new Thread(println(counter))
-    thrdInc1.start()
-    thrdInc2.start()
-    thrdPrint.start()
-    */
 }
