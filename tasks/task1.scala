@@ -1,4 +1,5 @@
 import java.util.concurrent.Callable
+import java.util.concurrent.atomic.AtomicInteger
 
 object Main extends App{
     // TASK 1.a
@@ -85,12 +86,13 @@ This is also called "lost update".
 
 //Deadlock is...
 //To prevent deadlock we can...
-/*lazy val A : Int = B
-lazy val B : Int = A 
-val Ta = new Thread {println(A)}
-Ta.start()
-*/
+def deadlock() = {
+    lazy val A : Int = B
+    lazy val B : Int = A 
+    val Ta = new Thread {println(A)}
+    Ta.start()
+}
 
-
+//deadlock()
 
 }
