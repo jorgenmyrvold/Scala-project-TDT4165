@@ -2,7 +2,7 @@ import exceptions._
 import scala.collection.mutable.Queue
 
 object TransactionStatus extends Enumeration {
-  val SUCCESS, PENDING, FAILED = Value
+    val SUCCESS, PENDING, FAILED = Value
 }
 
 class TransactionQueue {
@@ -21,7 +21,11 @@ class TransactionQueue {
 
     // Return whether the queue is empty
     def isEmpty: Boolean = this.synchronized {
+<<<<<<< HEAD
         !TransQueue.nonEmpty 
+=======
+        !TransQueue.nonEmpty
+>>>>>>> 1420867b8dfcad1d7470f40be33bd4f71ea70fbf
     }
 
     // Add new element to the back of the queue
@@ -48,25 +52,25 @@ class Transaction(val transactionsQueue: TransactionQueue,
                   val amount: Double,
                   val allowedAttemps: Int) extends Runnable {
 
-  var status: TransactionStatus.Value = TransactionStatus.PENDING
-  var attempt = 0
+    var status: TransactionStatus.Value = TransactionStatus.PENDING
+    var attempt = 0
 
-  override def run: Unit = {
+    override def run: Unit = {
 
-      def doTransaction() = {
-          // TODO - project task 3
-          // Extend this method to satisfy requirements.
-          from withdraw amount
-          to deposit amount
-      }
+        def doTransaction() = {
+            // TODO - project task 3
+            // Extend this method to satisfy requirements.
+            // from withdraw amount
+            // to deposit amount
+        }
 
-      // TODO - project task 3
-      // make the code below thread safe
-      if (status == TransactionStatus.PENDING) {
-          doTransaction
-          Thread.sleep(50) // you might want this to make more room for
-                           // new transactions to be added to the queue
-      }
+        // TODO - project task 3
+        // make the code below thread safe
+        if (status == TransactionStatus.PENDING) {
+            doTransaction
+            Thread.sleep(50) // you might want this to make more room for
+            // new transactions to be added to the queue
+        }
 
 
     }
