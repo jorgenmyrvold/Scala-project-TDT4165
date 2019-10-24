@@ -1,0 +1,142 @@
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:1:12: object scalatest is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.scalatest.FunSuite[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:2:8: not found: object exceptions[0m
+[0m[[0m[31merror[0m] [0m[0mimport exceptions._[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:4:28: not found: type FunSuite[0m
+[0m[[0m[31merror[0m] [0m[0mclass AccountTests extends FunSuite {[0m
+[0m[[0m[31merror[0m] [0m[0m                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:6:18: not found: type Bank[0m
+[0m[[0m[31merror[0m] [0m[0m  val bank = new Bank()[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:8:3: not found: value test[0m
+[0m[[0m[31merror[0m] [0m[0m  test("Test 01: Valid account withdrawal") {[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:9:22: not found: type Account[0m
+[0m[[0m[31merror[0m] [0m[0m    val acc    = new Account(bank, 500)[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:15:3: not found: value test[0m
+[0m[[0m[31merror[0m] [0m[0m  test("Test 02: Invalid account withdrawal should throw exception") {[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:16:22: not found: type Account[0m
+[0m[[0m[31merror[0m] [0m[0m    val acc    = new Account(bank, 500)[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:22:3: not found: value test[0m
+[0m[[0m[31merror[0m] [0m[0m  test("Test 03: Withdrawal of negative amount should throw exception") {[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:23:22: not found: type Account[0m
+[0m[[0m[31merror[0m] [0m[0m    val acc    = new Account(bank, 500)[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:29:3: not found: value test[0m
+[0m[[0m[31merror[0m] [0m[0m  test("Test 04: Valid account deposit") {[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:30:22: not found: type Account[0m
+[0m[[0m[31merror[0m] [0m[0m    val acc    = new Account(bank, 500)[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:36:3: not found: value test[0m
+[0m[[0m[31merror[0m] [0m[0m  test("Test 05: Deposit of negative amount should throw exception") {[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:37:22: not found: type Account[0m
+[0m[[0m[31merror[0m] [0m[0m    val acc    = new Account(bank, 500)[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:43:3: not found: value test[0m
+[0m[[0m[31merror[0m] [0m[0m  test("Test 06: Correct balance amount after several withdrawals and deposits") {[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:44:21: not found: type Account[0m
+[0m[[0m[31merror[0m] [0m[0m    val acc   = new Account(bank, 50000)[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:45:17: not found: value Main[0m
+[0m[[0m[31merror[0m] [0m[0m    val first = Main.thread {[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:50:18: not found: value Main[0m
+[0m[[0m[31merror[0m] [0m[0m    val second = Main.thread {[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:55:17: not found: value Main[0m
+[0m[[0m[31merror[0m] [0m[0m    val third = Main.thread {[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:60:18: not found: value Main[0m
+[0m[[0m[31merror[0m] [0m[0m    val fourth = Main.thread {[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:75:36: not found: type FunSuite[0m
+[0m[[0m[31merror[0m] [0m[0mclass AccountTransferTests extends FunSuite {[0m
+[0m[[0m[31merror[0m] [0m[0m                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:78:3: not found: value test[0m
+[0m[[0m[31merror[0m] [0m[0m  test("Test 07: Valid transfer between accounts") {[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:79:20: not found: type Bank[0m
+[0m[[0m[31merror[0m] [0m[0m    val bank = new Bank()[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:94:3: not found: value test[0m
+[0m[[0m[31merror[0m] [0m[0m  test("Test 08: Transfer of negative amount between accounts should fail") {[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:95:20: not found: type Bank[0m
+[0m[[0m[31merror[0m] [0m[0m    val bank = new Bank()[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:111:3: not found: value test[0m
+[0m[[0m[31merror[0m] [0m[0m  test("Test 09: Invalid transfer between accounts due to insufficient funds should lead to transaction status FAILED and no money should be transferred between accounts") {[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:112:20: not found: type Bank[0m
+[0m[[0m[31merror[0m] [0m[0m    val bank = new Bank()[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:113:20: not found: type Account[0m
+[0m[[0m[31merror[0m] [0m[0m    val acc1 = new Account(bank, 100)[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:114:20: not found: type Account[0m
+[0m[[0m[31merror[0m] [0m[0m    val acc2 = new Account(bank, 1000)[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:128:3: not found: value test[0m
+[0m[[0m[31merror[0m] [0m[0m  test("Test 10: Correct balance amounts after several transfers") {[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:129:20: not found: type Bank[0m
+[0m[[0m[31merror[0m] [0m[0m    val bank = new Bank()[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:131:20: not found: type Account[0m
+[0m[[0m[31merror[0m] [0m[0m    val acc1 = new Account(bank, 3000)[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:132:20: not found: type Account[0m
+[0m[[0m[31merror[0m] [0m[0m    val acc2 = new Account(bank, 5000)[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:133:17: not found: value Main[0m
+[0m[[0m[31merror[0m] [0m[0m    val first = Main.thread {[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:138:18: not found: value Main[0m
+[0m[[0m[31merror[0m] [0m[0m    val second = Main.thread {[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:154:3: not found: value test[0m
+[0m[[0m[31merror[0m] [0m[0m  test("Test 11: Failed transactions should retry and potentially succeed with multiple allowed attempts") {[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:157:22: not found: type Bank[0m
+[0m[[0m[31merror[0m] [0m[0m      val bank = new Bank(allowedAttempts = 3)[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:157:27: not found: value allowedAttempts[0m
+[0m[[0m[31merror[0m] [0m[0m      val bank = new Bank(allowedAttempts = 3)[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:159:22: not found: type Account[0m
+[0m[[0m[31merror[0m] [0m[0m      val acc1 = new Account(bank, 100)[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:160:22: not found: type Account[0m
+[0m[[0m[31merror[0m] [0m[0m      val acc2 = new Account(bank, 100)[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:161:22: not found: type Account[0m
+[0m[[0m[31merror[0m] [0m[0m      val acc3 = new Account(bank, 100)[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:178:3: not found: value test[0m
+[0m[[0m[31merror[0m] [0m[0m  test("Test 12: Some transactions should be stopped with only one allowed attempt") {[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:181:22: not found: type Bank[0m
+[0m[[0m[31merror[0m] [0m[0m      val bank = new Bank(allowedAttempts = 1)[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:181:27: not found: value allowedAttempts[0m
+[0m[[0m[31merror[0m] [0m[0m      val bank = new Bank(allowedAttempts = 1)[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:183:22: not found: type Account[0m
+[0m[[0m[31merror[0m] [0m[0m      val acc1 = new Account(bank, 100)[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:184:22: not found: type Account[0m
+[0m[[0m[31merror[0m] [0m[0m      val acc2 = new Account(bank, 100)[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala:185:22: not found: type Account[0m
+[0m[[0m[31merror[0m] [0m[0m      val acc3 = new Account(bank, 100)[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m47 errors found[0m

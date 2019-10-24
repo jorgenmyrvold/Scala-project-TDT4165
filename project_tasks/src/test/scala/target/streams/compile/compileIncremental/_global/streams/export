@@ -1,0 +1,1 @@
+scalac -bootclasspath /home/simen/.sbt/boot/scala-2.12.10/lib/scala-library.jar -classpath /home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/target/scala-2.12/classes /home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala
