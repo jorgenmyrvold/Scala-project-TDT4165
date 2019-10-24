@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e11ac163-e22a-4e42-a282-a506bc9c01a1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks/task1.scala" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/task1.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_tasks/src/main/scala/Transaction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/project_tasks/src/main/scala/Transaction.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

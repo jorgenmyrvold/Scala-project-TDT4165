@@ -16,27 +16,27 @@ class TransactionQueue {
     println(s"Elements of queue1 = $TransQueue")
 
     // Remove and return the first element from the queue
-    def pop: Transaction = {
+    def pop: Transaction = this.synchronized(){
         val T = TransQueue.dequeue
     }
 
     // Return whether the queue is empty
-    def isEmpty: Boolean = {
+    def isEmpty: Boolean = this.synchronized() {
         !TransQueue.nonEmpty 
     }
 
     // Add new element to the back of the queue
-    def push(t: Transaction): Unit = {
+    def push(t: Transaction): Unit = this.synchronized() {
         TransQueue.enqueue(Transaction)
     }
 
     // Return the first element from the queue without removing it
-    def peek: Transaction = {
+    def peek: Transaction = this.synchronized() {
         TransQueue.head
     }
 
     // Return an iterator to allow you to iterate over the queue
-    def iterator: Iterator[Transaction] = {
+    def iterator: Iterator[Transaction] = this.synchronized(){
         TransQueue.iterator
 
     }
