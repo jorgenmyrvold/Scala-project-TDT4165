@@ -27,7 +27,7 @@ class TransactionQueue {
 
     // Add new element to the back of the queue
     def push(t: Transaction): Unit = this.synchronized() {
-        TransQueue.enqueue(Transaction)
+        TransQueue.enqueue(t)
     }
 
     // Return the first element from the queue without removing it
