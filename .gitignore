@@ -1,3 +1,7 @@
 # IntelliJ setup files
 .idea
 .idea/workspace.xml
+target
+project_tasks/target
+build.sbt
+tasks/target

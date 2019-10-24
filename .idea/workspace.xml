@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e11ac163-e22a-4e42-a282-a506bc9c01a1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_tasks/src/main/scala/Transaction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/project_tasks/src/main/scala/Transaction.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore.swp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_tasks/target/streams/compile/compile/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project_tasks/target/streams/compile/compile/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_tasks/target/streams/compile/compileIncremental/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project_tasks/target/streams/compile/compileIncremental/_global/streams/out" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
