@@ -16,7 +16,7 @@ class TransactionQueue {
 
     // Remove and return the first element from the queue
     def pop: Transaction = this.synchronized {
-        val T = TransQueue.dequeue
+        TransQueue.dequeue
     }
 
     // Return whether the queue is empty
