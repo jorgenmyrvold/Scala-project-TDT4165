@@ -21,11 +21,7 @@ class TransactionQueue {
 
     // Return whether the queue is empty
     def isEmpty: Boolean = this.synchronized {
-<<<<<<< HEAD
         !TransQueue.nonEmpty 
-=======
-        !TransQueue.nonEmpty
->>>>>>> 1420867b8dfcad1d7470f40be33bd4f71ea70fbf
     }
 
     // Add new element to the back of the queue
