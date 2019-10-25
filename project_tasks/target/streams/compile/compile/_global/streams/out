@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 [0m[[0m[31merror[0m] [0m[0m/Users/lisa/Documents/scala_project/Scala-project-TDT4165/project_tasks/src/main/scala/Bank.scala:8:36: not found: type TransactionQueue[0m
 [0m[[0m[31merror[0m] [0m[0m    private val transactionsQueue: TransactionQueue = new TransactionQueue()[0m
 [0m[[0m[31merror[0m] [0m[0m                                   ^[0m
@@ -86,4 +87,11 @@
 >>>>>>> e18cb453e94749b034cef1e778c484171d32712e
 =======
 [0m[[0m[31merror[0m] [0m[0m13 errors found[0m
+>>>>>>> jorgen/bank
+=======
+[0m[[0m[33mwarn[0m] [0m[0m/Users/Jorgen/Google_Drive/Programmering/Scala_project/project_tasks/src/main/scala/Transaction.scala:60:17: match may not be exhaustive.[0m
+[0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following inputs: Left((x: TransactionStatus.Value forSome x not in SUCCESS)), Right((x: TransactionStatus.Value forSome x not in FAILED))[0m
+[0m[[0m[33mwarn[0m] [0m[0m                resultWithdraw match {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
 >>>>>>> jorgen/bank

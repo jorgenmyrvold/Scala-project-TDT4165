@@ -1,6 +1,7 @@
 import exceptions._
 import scala.collection.mutable.Queue
 
+
 object TransactionStatus extends Enumeration {
     val SUCCESS, PENDING, FAILED = Value
 }
@@ -54,6 +55,16 @@ class Transaction(val transactionsQueue: TransactionQueue,
     override def run: Unit = {
 
         def doTransaction() = {
+            if (this.attempt < this.allowedAttemps) {
+                val resultWithdraw = this.from.withdraw(amount)
+                resultWithdraw match {
+                    case Right(TransactionStatus.FAILED) => this.attempt += 1
+                    case Left(TransactionStatus.SUCCESS) => this.to.deposit(amount)   // Should not fail because check in withdraw
+                }
+            }
+            else {
+                this.status = TransactionStatus.FAILED
+            }
             // TODO - project task 3
             // Extend this method to satisfy requirements.
             // from withdraw amount
