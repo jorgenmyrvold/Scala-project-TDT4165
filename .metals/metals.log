@@ -1,0 +1,83 @@
+INFO  time: initialize in 0.62s
+WARN  no build tool detected in workspace '/Users/lisa/Documents/scala_project/Scala-project-TDT4165'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /Users/lisa/Documents/scala_project/Scala-project-TDT4165/tasks/task1.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target: /Users/lisa/Documents/scala_project/Scala-project-TDT4165/project_tasks/src/main/scala/Transaction.scala
+WARN  no build target: /Users/lisa/Documents/scala_project/Scala-project-TDT4165/project_tasks/src/main/scala/Bank.scala
+WARN  no build target: /Users/lisa/Documents/scala_project/Scala-project-TDT4165/project_tasks/src/main/scala/Account.scala
+WARN  no build target: /Users/lisa/Documents/scala_project/Scala-project-TDT4165/project_tasks/src/main/scala/Transaction.scala
+WARN  no build target: /Users/lisa/Documents/scala_project/Scala-project-TDT4165/project_tasks/src/main/scala/Account.scala
+WARN  no build target: /Users/lisa/Documents/scala_project/Scala-project-TDT4165/project_tasks/src/main/scala/Transaction.scala
+Oct 24, 2019 9:53:27 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.seenFromType(HoverProvider.scala:106)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:42)
+
+Oct 24, 2019 9:56:50 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.seenFromType(HoverProvider.scala:106)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:42)
+
+Oct 24, 2019 9:57:02 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.seenFromType(HoverProvider.scala:106)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:42)
+
+Oct 24, 2019 9:57:02 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.seenFromType(HoverProvider.scala:106)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:42)
+
+Oct 24, 2019 9:58:35 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.seenFromType(HoverProvider.scala:106)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:42)
+
+WARN  no build target: /Users/lisa/Documents/scala_project/Scala-project-TDT4165/project_tasks/src/main/scala/Bank.scala
+WARN  no build target: /Users/lisa/Documents/scala_project/Scala-project-TDT4165/project_tasks/src/main/scala/Main.scala
+WARN  no build target: /Users/lisa/Documents/scala_project/Scala-project-TDT4165/project_tasks/src/main/scala/Bank.scala
+INFO  shutting down Metals
+INFO  time: initialize in 0.75s
+WARN  no build tool detected in workspace '/Users/lisa/Documents/scala_project/Scala-project-TDT4165'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /Users/lisa/Documents/scala_project/Scala-project-TDT4165/project_tasks/src/main/scala/Account.scala
+WARN  no build target: /Users/lisa/Documents/scala_project/Scala-project-TDT4165/project_tasks/src/main/scala/Transaction.scala
+WARN  no build target: /Users/lisa/Documents/scala_project/Scala-project-TDT4165/project_tasks/src/main/scala/Bank.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target: /Users/lisa/Documents/scala_project/Scala-project-TDT4165/project_tasks/src/main/scala/exceptions/IllegalAmountException.scala
+WARN  no build target: /Users/lisa/Documents/scala_project/Scala-project-TDT4165/project_tasks/src/main/scala/exceptions/NoSufficientFundsException.scala
+WARN  no build target: /Users/lisa/Documents/scala_project/Scala-project-TDT4165/tasks/task1.scala
+WARN  no build target: /Users/lisa/Documents/scala_project/Scala-project-TDT4165/project_tasks/src/main/scala/exceptions/NoSufficientFundsException.scala
+WARN  no build target: /Users/lisa/Documents/scala_project/Scala-project-TDT4165/project_tasks/src/main/scala/exceptions/IllegalAmountException.scala
+INFO  shutting down Metals
+INFO  time: initialize in 0.57s
+WARN  no build tool detected in workspace '/Users/lisa/Documents/scala_project/Scala-project-TDT4165'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /Users/lisa/Documents/scala_project/Scala-project-TDT4165/project_tasks/src/main/scala/Account.scala
+INFO  no build target: using presentation compiler with only scala-library
+Oct 24, 2019 11:12:21 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.seenFromType(HoverProvider.scala:106)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:42)
+
+WARN  no build target: /Users/lisa/Documents/scala_project/Scala-project-TDT4165/project_tasks/src/main/scala/Bank.scala
+WARN  no build target: /Users/lisa/Documents/scala_project/Scala-project-TDT4165/project_tasks/src/main/scala/Transaction.scala
+WARN  no build target: /Users/lisa/Documents/scala_project/Scala-project-TDT4165/project_tasks/src/main/scala/Main.scala
+WARN  no build target: /Users/lisa/Documents/scala_project/Scala-project-TDT4165/project_tasks/src/main/scala/Bank.scala
+Oct 24, 2019 11:25:26 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.seenFromType(HoverProvider.scala:106)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:42)
+
+WARN  no build target: /Users/lisa/Documents/scala_project/Scala-project-TDT4165/project_tasks/src/test/scala/AccountTests.scala
+WARN  no build target: /Users/lisa/Documents/scala_project/Scala-project-TDT4165/tasks/task1.scala
+Oct 24, 2019 11:45:32 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 124
+Oct 24, 2019 11:45:53 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 162
+WARN  no build target: /Users/lisa/Documents/scala_project/Scala-project-TDT4165/tasks/task1.scala
