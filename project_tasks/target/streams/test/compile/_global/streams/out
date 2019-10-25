@@ -1,16 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/Jorgen/Google_Drive/Programmering/Scala_project/project_tasks/src/test/scala/AccountTests.scala:12:19: value isLeft is not a member of Unit[0m
-[0m[[0m[31merror[0m] [0m[0m    assert(result.isLeft)[0m
-[0m[[0m[31merror[0m] [0m[0m                  ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/Jorgen/Google_Drive/Programmering/Scala_project/project_tasks/src/test/scala/AccountTests.scala:19:19: value isRight is not a member of Unit[0m
-[0m[[0m[31merror[0m] [0m[0m    assert(result.isRight)[0m
-[0m[[0m[31merror[0m] [0m[0m                  ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/Jorgen/Google_Drive/Programmering/Scala_project/project_tasks/src/test/scala/AccountTests.scala:26:19: value isRight is not a member of Unit[0m
-[0m[[0m[31merror[0m] [0m[0m    assert(result.isRight)[0m
-[0m[[0m[31merror[0m] [0m[0m                  ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/Jorgen/Google_Drive/Programmering/Scala_project/project_tasks/src/test/scala/AccountTests.scala:33:19: value isLeft is not a member of Unit[0m
-[0m[[0m[31merror[0m] [0m[0m    assert(result.isLeft)[0m
-[0m[[0m[31merror[0m] [0m[0m                  ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/Jorgen/Google_Drive/Programmering/Scala_project/project_tasks/src/test/scala/AccountTests.scala:40:19: value isRight is not a member of Unit[0m
-[0m[[0m[31merror[0m] [0m[0m    assert(result.isRight)[0m
-[0m[[0m[31merror[0m] [0m[0m                  ^[0m
-[0m[[0m[31merror[0m] [0m[0m5 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/Jorgen/Google_Drive/Programmering/Scala_project/project_tasks/src/test/scala/AccountTests.scala:89:13: not found: value getProcessedTransactionsAsList[0m
+[0m[[0m[31merror[0m] [0m[0m    println(getProcessedTransactionsAsList)[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
