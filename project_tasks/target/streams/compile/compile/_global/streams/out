@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [0m[[0m[31merror[0m] [0m[0m/Users/lisa/Documents/scala_project/Scala-project-TDT4165/project_tasks/src/main/scala/Bank.scala:8:36: not found: type TransactionQueue[0m
 [0m[[0m[31merror[0m] [0m[0m    private val transactionsQueue: TransactionQueue = new TransactionQueue()[0m
 [0m[[0m[31merror[0m] [0m[0m                                   ^[0m
@@ -17,26 +18,68 @@
 [0m[[0m[31merror[0m] [0m[0m    def addTransactionToQueue(from: Account, to: Account, amount: Double): Unit = this.synchronized {[0m
 [0m[[0m[31merror[0m] [0m[0m                                                 ^[0m
 [0m[[0m[31merror[0m] [0m[0m/Users/lisa/Documents/scala_project/Scala-project-TDT4165/project_tasks/src/main/scala/Bank.scala:12:31: not found: type Transaction[0m
+=======
+[0m[[0m[31merror[0m] [0m[0m/Users/Jorgen/Google_Drive/Programmering/Scala_project/project_tasks/src/main/scala/Account.scala:3:25: not found: type Bank[0m
+[0m[[0m[31merror[0m] [0m[0mclass Account(val bank: Bank, initialBalance: Double) {[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/Jorgen/Google_Drive/Programmering/Scala_project/project_tasks/src/main/scala/Bank.scala:8:36: not found: type TransactionQueue[0m
+[0m[[0m[31merror[0m] [0m[0m    private val transactionsQueue: TransactionQueue = new TransactionQueue()[0m
+[0m[[0m[31merror[0m] [0m[0m                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/Jorgen/Google_Drive/Programmering/Scala_project/project_tasks/src/main/scala/Bank.scala:8:59: not found: type TransactionQueue[0m
+[0m[[0m[31merror[0m] [0m[0m    private val transactionsQueue: TransactionQueue = new TransactionQueue()[0m
+[0m[[0m[31merror[0m] [0m[0m                                                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/Jorgen/Google_Drive/Programmering/Scala_project/project_tasks/src/main/scala/Bank.scala:9:40: not found: type TransactionQueue[0m
+[0m[[0m[31merror[0m] [0m[0m    private val processedTransactions: TransactionQueue = new TransactionQueue()[0m
+[0m[[0m[31merror[0m] [0m[0m                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/Jorgen/Google_Drive/Programmering/Scala_project/project_tasks/src/main/scala/Bank.scala:9:63: not found: type TransactionQueue[0m
+[0m[[0m[31merror[0m] [0m[0m    private val processedTransactions: TransactionQueue = new TransactionQueue()[0m
+[0m[[0m[31merror[0m] [0m[0m                                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/Jorgen/Google_Drive/Programmering/Scala_project/project_tasks/src/main/scala/Bank.scala:11:37: not found: type Account[0m
+[0m[[0m[31merror[0m] [0m[0m    def addTransactionToQueue(from: Account, to: Account, amount: Double): Unit = this.synchronized {[0m
+[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/Jorgen/Google_Drive/Programmering/Scala_project/project_tasks/src/main/scala/Bank.scala:11:50: not found: type Account[0m
+[0m[[0m[31merror[0m] [0m[0m    def addTransactionToQueue(from: Account, to: Account, amount: Double): Unit = this.synchronized {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/Jorgen/Google_Drive/Programmering/Scala_project/project_tasks/src/main/scala/Bank.scala:12:31: not found: type Transaction[0m
+>>>>>>> e18cb453e94749b034cef1e778c484171d32712e
 [0m[[0m[31merror[0m] [0m[0m        val transaction = new Transaction(transactionsQueue,        // create a new transaction object[0m
 [0m[[0m[31merror[0m] [0m[0m                              ^[0m
 [0m[[0m[31merror[0m] [0m[0m/Users/lisa/Documents/scala_project/Scala-project-TDT4165/project_tasks/src/main/scala/Bank.scala:17:39: not found: value allowedAttemps[0m
 [0m[[0m[31merror[0m] [0m[0m                                      allowedAttemps)[0m
 [0m[[0m[31merror[0m] [0m[0m                                      ^[0m
+<<<<<<< HEAD
 [0m[[0m[31merror[0m] [0m[0m/Users/lisa/Documents/scala_project/Scala-project-TDT4165/project_tasks/src/main/scala/Bank.scala:26:37: value push is not a member of Unit[0m
 [0m[[0m[31merror[0m] [0m[0m                processTransactions.push(transaction)[0m
 [0m[[0m[31merror[0m] [0m[0m                                    ^[0m
 [0m[[0m[31merror[0m] [0m[0m/Users/lisa/Documents/scala_project/Scala-project-TDT4165/project_tasks/src/main/scala/Bank.scala:36:45: not found: type Account[0m
+=======
+[0m[[0m[31merror[0m] [0m[0m/Users/Jorgen/Google_Drive/Programmering/Scala_project/project_tasks/src/main/scala/Bank.scala:26:37: value push is not a member of Unit[0m
+[0m[[0m[31merror[0m] [0m[0m                processTransactions.push(transaction)[0m
+[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/Jorgen/Google_Drive/Programmering/Scala_project/project_tasks/src/main/scala/Bank.scala:36:45: not found: type Account[0m
+>>>>>>> e18cb453e94749b034cef1e778c484171d32712e
 [0m[[0m[31merror[0m] [0m[0m    def addAccount(initialBalance: Double): Account = this.synchronized {[0m
 [0m[[0m[31merror[0m] [0m[0m                                            ^[0m
 [0m[[0m[31merror[0m] [0m[0m/Users/lisa/Documents/scala_project/Scala-project-TDT4165/project_tasks/src/main/scala/Bank.scala:37:13: not found: type Account[0m
 [0m[[0m[31merror[0m] [0m[0m        new Account(this, initialBalance)[0m
 [0m[[0m[31merror[0m] [0m[0m            ^[0m
+<<<<<<< HEAD
 [0m[[0m[31merror[0m] [0m[0m/Users/lisa/Documents/scala_project/Scala-project-TDT4165/project_tasks/src/main/scala/Bank.scala:40:46: not found: type Transaction[0m
 [0m[[0m[31merror[0m] [0m[0m    def getProcessedTransactionsAsList: List[Transaction] = this.synchronized {[0m
 [0m[[0m[31merror[0m] [0m[0m                                             ^[0m
 [0m[[0m[31merror[0m] [0m[0m/Users/lisa/Documents/scala_project/Scala-project-TDT4165/project_tasks/src/main/scala/Transaction.scala:20:5: type mismatch;[0m
+=======
+[0m[[0m[31merror[0m] [0m[0m/Users/Jorgen/Google_Drive/Programmering/Scala_project/project_tasks/src/main/scala/Bank.scala:40:46: not found: type Transaction[0m
+[0m[[0m[31merror[0m] [0m[0m    def getProcessedTransactionsAsList: List[Transaction] = this.synchronized {[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/Jorgen/Google_Drive/Programmering/Scala_project/project_tasks/src/main/scala/Transaction.scala:20:5: type mismatch;[0m
+>>>>>>> e18cb453e94749b034cef1e778c484171d32712e
 [0m[[0m[31merror[0m] [0m[0m found   : Unit[0m
 [0m[[0m[31merror[0m] [0m[0m required: Transaction[0m
 [0m[[0m[31merror[0m] [0m[0m    }[0m
 [0m[[0m[31merror[0m] [0m[0m    ^[0m
+<<<<<<< HEAD
 [0m[[0m[31merror[0m] [0m[0m13 errors found[0m
+=======
+[0m[[0m[31merror[0m] [0m[0m14 errors found[0m
+>>>>>>> e18cb453e94749b034cef1e778c484171d32712e
