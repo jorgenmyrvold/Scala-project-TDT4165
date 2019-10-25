@@ -72,6 +72,7 @@
 [0m[[0m[31merror[0m] [0m[0m/Users/Jorgen/Google_Drive/Programmering/Scala_project/project_tasks/src/main/scala/Bank.scala:40:46: not found: type Transaction[0m
 [0m[[0m[31merror[0m] [0m[0m    def getProcessedTransactionsAsList: List[Transaction] = this.synchronized {[0m
 [0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+<<<<<<< HEAD
 [0m[[0m[31merror[0m] [0m[0m/Users/Jorgen/Google_Drive/Programmering/Scala_project/project_tasks/src/main/scala/Transaction.scala:20:5: type mismatch;[0m
 >>>>>>> e18cb453e94749b034cef1e778c484171d32712e
 [0m[[0m[31merror[0m] [0m[0m found   : Unit[0m
@@ -83,3 +84,6 @@
 =======
 [0m[[0m[31merror[0m] [0m[0m14 errors found[0m
 >>>>>>> e18cb453e94749b034cef1e778c484171d32712e
+=======
+[0m[[0m[31merror[0m] [0m[0m13 errors found[0m
+>>>>>>> jorgen/bank
