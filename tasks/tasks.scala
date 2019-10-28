@@ -113,4 +113,8 @@ object Main extends App{
         val Ta = new Thread {println(A)}
         Ta.start()
     }
+
+    //To activate the deadlock
+    //deadlock()
+    
 }
