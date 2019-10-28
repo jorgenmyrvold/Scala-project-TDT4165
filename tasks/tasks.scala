@@ -7,7 +7,8 @@ object Main extends App{
     for (i <- 0 to 50){
         arr = arr :+ i
     }
-    //println(arr.mkString(","))
+    println("Task 1.a: List from 1 to 50")
+    println(arr.mkString(","))
 
     // TASK 1.b
     def array_sum(arr: Array[Int]) : Int = {
@@ -17,6 +18,7 @@ object Main extends App{
         }
         running_total
     }
+    println("Task 1.b: Sum of array using for loop")
     println(array_sum(arr))
 
     // TASK 1.c
@@ -28,7 +30,8 @@ object Main extends App{
         }
 
     }
-    // println(array_sum_rec(arr))
+    println("Task 1.c: Sum of array using recursion")
+    println(array_sum_rec(arr))
 
     // TASK 1.d
     def fib_num(n: Int) : BigInt = {
@@ -42,65 +45,72 @@ object Main extends App{
             fib_num(n-1) + fib_num(n-2)
         }
     }
+    println("Task 1.d: Computing the nth Fibonacci number, n=10")
     println(fib_num(10))
     /*
-    BigInt has no limit practical limit. It allocates as much memory as needed. In theory the size is limited to
-    Integer.MAX_VALUE bits, but the available recoursses on the machine sets the limit in pracis.
-    Int has a limitation on 32 bit which can generate values from -2^-31 to (2^31)-1
+    BigInt has no practical limit. It allocates as much memory as needed. 
+    In theory the size is limited to Integer.MAX_VALUE bits, but the 
+    available recoursses on the machine sets the limit in pracis. Int has 
+    a limitation on 32 bit which can generate values from -2^-31 to (2^31)-1
      */
     
-//Task 2a
-  def returnThread(body: =>Unit): Thread = {
-    val t = new Thread {
-    override def run() = body
+    //Task 2a
+    def returnThread(body: =>Unit): Thread = {
+        val t = new Thread {
+            override def run() = body
+        }
+        t 
     }
-      t 
-  }
 
-//def increaseCounter(): Unit = this.synchronized {
-def increaseCounter(): Unit = {
-  counter.addAndGet(1)
-}
+    /* 
+    Two possibilities. Using synchronized or AtomicInteger. In the 
+    implementation Atomic integer is used, but the function head using 
+    synchronized is showed in the comment below.
+    */
+    //def increaseCounter(): Unit = this.synchronized {  
+    def increaseCounter(): Unit = {
+        counter.addAndGet(1)
+    }
 
+    private var counter: AtomicInteger = new AtomicInteger(123)
 
-  private var counter: AtomicInteger = new AtomicInteger(123)
+    val thrd1 = returnThread(increaseCounter())
+    val thrd2 = returnThread(increaseCounter())
+    val thrd3 = returnThread({println("Counter: " + counter)})
 
-  val thrd1 = returnThread(increaseCounter())
-  val thrd2 = returnThread(increaseCounter())
-  val thrd3 = returnThread({println("Counter: " + counter)})
+    thrd1.start
+    thrd2.start
+    thrd3.start
 
-  thrd1.start
-  thrd2.start
-  thrd3.start
+    /*
+    A situation where it can be problematic is in bank. If two different accounts 
+    are trying to make a transaction to the same account simultaneously, they both 
+    add a new value to the same initial value. This can lead to some of the money 
+    getting lost in transaction because the account balance isn't updated in-between 
+    the two transactions. And one of them is transferring to the account with a wrong 
+    assumption of what the current account balance is because it hasn't been updated.
+    This is also called "lost update".
+    */
 
-//This phenomenon is called...
+    /*
+    Deadlock is a situation where two computer programs sharing the same resource are 
+    preventing each other from accessing the resource. This results in both programs 
+    ceasing to function. To prevent deadlock we can use one of the four conditions:
+    1. Mutual Exclusion - Resources shared such as read-only files do not lead to
+        deadlocks but resources, such as printers and tape drives, requires exclusive 
+        access by a single process.
+    2. Hold and Wait - Processes must be prevented from holding one or more resources 
+        while simultaneously waiting for one or more others.
+    3. No Preemption - Preemption of process resource allocations can avoid the condition 
+        of deadlocks, where ever possible.
+    4. Circular Wait - Circular wait can be avoided if we number all resources, and require 
+        that processes request resources only in strictly increasing or decreasing order.
+    */
 
-/*
-A situation where it can be problematic is in bank. 
-If two different accounts are trying to make a transaction to the same account simultaneously,
-they both add a new value to the same initial value. 
-This can lead to some of the money getting lost in transaction because the account balance isn't updated in-between the two transactions. 
-And one of them is transferring to the account with a wrong assumption of what the current account balance is because it hasn't been updated.
-This is also called "lost update".
-*/
-
-/*
-Deadlock is a situation where two computer programs sharing the same resource are preventing 
-each other from accessing the resource. This results in both programs ceasing to function.
-To prevent deadlock we can use one of the four conditions:
-1. Mutual Exclusion - Resources shared such as read-only files do not lead to deadlocks but resources, such as printers and tape drives, requires exclusive access by a single process.
-2. Hold and Wait - Processes must be prevented from holding one or more resources while simultaneously waiting for one or more others.
-3. No Preemption - Preemption of process resource allocations can avoid the condition of deadlocks, where ever possible.
-4. Circular Wait - Circular wait can be avoided if we number all resources, and require that processes request resources only in strictly increasing or decreasing order.
-*/
-
-def deadlock() = {
-    lazy val A : Int = B
-    lazy val B : Int = A 
-    val Ta = new Thread {println(A)}
-    Ta.start()
-}
-
-//deadlock()
-
+    def deadlock() = {
+        lazy val A : Int = B
+        lazy val B : Int = A 
+        val Ta = new Thread {println(A)}
+        Ta.start()
+    }
 }
