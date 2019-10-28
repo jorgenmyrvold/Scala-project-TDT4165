@@ -13,7 +13,6 @@ class TransactionQueue {
 
     //Datastructure to hold transctions
     var TransQueue = Queue.empty[Transaction]
-    println(s"Elements of queue1 = $TransQueue")
 
     // Remove and return the first element from the queue
     def pop: Transaction = this.synchronized {
@@ -58,8 +57,7 @@ class Transaction(val transactionsQueue: TransactionQueue,
             if (this.attempt < this.allowedAttemps) {
                 val resultWithdraw = this.from.withdraw(amount)
                 resultWithdraw match {
-                    case Right(error) => {this.attempt += 1
-                                          println(error)}
+                    case Right(error) => {this.attempt += 1}
                     case Left(unit) => {this.to.deposit(amount)   // deposit should not fail because check in withdraw
                                         this.status = TransactionStatus.SUCCESS}
                 }
