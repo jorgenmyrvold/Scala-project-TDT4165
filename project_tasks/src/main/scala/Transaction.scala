@@ -58,8 +58,10 @@ class Transaction(val transactionsQueue: TransactionQueue,
             if (this.attempt < this.allowedAttemps) {
                 val resultWithdraw = this.from.withdraw(amount)
                 resultWithdraw match {
-                    case Right(TransactionStatus.FAILED) => this.attempt += 1
-                    case Left(TransactionStatus.SUCCESS) => this.to.deposit(amount)   // Should not fail because check in withdraw
+                    case Right(error) => {this.attempt += 1
+                                          println(error)}
+                    case Left(unit) => {this.to.deposit(amount)   // deposit should not fail because check in withdraw
+                                        this.status = TransactionStatus.SUCCESS}
                 }
             }
             else {
