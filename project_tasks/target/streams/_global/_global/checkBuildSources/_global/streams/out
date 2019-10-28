@@ -1,9 +1,1 @@
 [0m[[0m[0mdebug[0m] [0m[0mChecking for meta build source updates[0m
-[0m[[0m[33mwarn[0m] [0m[0mbuild source files have changed[0m
-[0m[[0m[33mwarn[0m] [0m[0mnew files: [0m
-[0m[[0m[33mwarn[0m] [0m[0m  /Users/Jorgen/Google_Drive/Programmering/Scala_project/project_tasks/build.sbt[0m
-[0m[[0m[33mwarn[0m] [0m[0mdeleted files: [0m
-[0m[[0m[33mwarn[0m] [0m[0m  /Users/lisa/Documents/scala_project/Scala-project-TDT4165/project_tasks/build.sbt[0m
-[0m[[0m[33mwarn[0m] [0m[0mApply these changes by running `reload`.[0m
-[0m[[0m[33mwarn[0m] [0m[0mAutomatically reload the build when source changes are detected by setting `Global / onChangedBuildSource := ReloadOnSourceChanges`.[0m
-[0m[[0m[33mwarn[0m] [0m[0mDisable this warning by setting `Global / onChangedBuildSource := IgnoreSourceChanges`.[0m
