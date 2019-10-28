@@ -153,7 +153,7 @@ class AccountTransferTests extends FunSuite {
 
   test("Test 11: Failed transactions should retry and potentially succeed with multiple allowed attempts") {
     var failed = 0
-    for (x <- 1 to 100) {
+    for (x <- 1 to 10) {
       val bank = new Bank(allowedAttempts = 3)
 
       val acc1 = new Account(bank, 100)

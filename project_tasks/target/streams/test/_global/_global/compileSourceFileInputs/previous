@@ -1,0 +1,1 @@
+["sbt.Task[scala.collection.immutable.Map[java.lang.String, scala.collection.Seq[scala.Tuple2[java.nio.file.Path, sbt.nio.FileStamp]]]]",{"2.12.10":{"hashes":[["/Users/Jorgen/Google_Drive/Programmering/Scala_project/project_tasks/src/test/scala/AccountTests.scala","d4656526d52a431a3300318e93d00dd4175e111a"]],"lastModifiedTimes":[]}}]
