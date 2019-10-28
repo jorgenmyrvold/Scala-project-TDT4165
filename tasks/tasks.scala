@@ -82,6 +82,12 @@ object Main extends App{
     thrd2.start
     thrd3.start
 
+    /* What we are seeing is that the functions gets called in different order, and this 
+    results in different results when printing the value. This phenomenon is called 
+    inconsistent retrieval. To prevent this in this example it will not help to use 
+    syncronized or atomicity, but we have to use join to make sure the two threads that 
+    increment the value is finished before the value is printed. */
+
     /*
     A situation where it can be problematic is in bank. If two different accounts 
     are trying to make a transaction to the same account simultaneously, they both 
