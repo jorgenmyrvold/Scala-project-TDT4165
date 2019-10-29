@@ -7,9 +7,7 @@ object TransactionStatus extends Enumeration {
 }
 
 class TransactionQueue {
-    // TODO
-    // project task 1.1
-    // Add datastructure to contain the transactions
+    // Task 1.1: Add datastructure to contain the transactions
 
     //Datastructure to hold transctions
     var TransQueue = Queue.empty[Transaction]
@@ -65,13 +63,13 @@ class Transaction(val transactionsQueue: TransactionQueue,
             else {
                 this.status = TransactionStatus.FAILED
             }
-            // TODO - project task 3
+            // Task 3
             // Extend this method to satisfy requirements.
             // from withdraw amount
             // to deposit amount
         }
 
-        // TODO - project task 3
+        // Task 3
         // make the code below thread safe
         if (status == TransactionStatus.PENDING) {
             doTransaction

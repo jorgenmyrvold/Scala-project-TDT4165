@@ -3,6 +3,7 @@ class Bank(val allowedAttempts: Integer = 3) {
     private var transactionsQueue: TransactionQueue = new TransactionQueue()
     private var processedTransactions: TransactionQueue = new TransactionQueue()
 
+    // Task 2: Creating the bank
     def addTransactionToQueue(from: Account, to: Account, amount: Double): Unit = {
         val transaction = new Transaction(transactionsQueue,        // create a new transaction object
                                           processedTransactions,
@@ -28,8 +29,7 @@ class Bank(val allowedAttempts: Integer = 3) {
             processedTransactions.push(transaction)
         }
     }
-        // TOO
-        // project task 2
+    
         // Function that pops a transaction from the queue
         // and spawns a thread to execute the transaction.
         // Finally do the appropriate thing, depending on whether
