@@ -55,7 +55,7 @@ object Main extends App{
     a limitation on 32 bit which can generate values from -2^-31 to (2^31)-1
      */
     
-    //Task 2.a
+    //TASK 2.a
     def returnThread(body: =>Unit): Thread = {
         val t = new Thread {
             override def run() = body
@@ -64,7 +64,7 @@ object Main extends App{
     }
 
 
-    /* Task 2.c
+    /* TASK 2.c
 
     There are at least two ways to make the function thread safe. Using synchronized or AtomicInteger. 
     In the implementation Atomic integer is used, but the function head using 
@@ -78,7 +78,7 @@ object Main extends App{
     private var counter: AtomicInteger = new AtomicInteger(123)
 
     
-    //Task 2.b
+    //TASK 2.b
     println("Task 2.b: Printing counter")
     def printCounter() : Unit = {
         val thrd1 = returnThread(increaseCounter())
@@ -108,7 +108,7 @@ object Main extends App{
     This is also called "lost update". */
 
 
-    /* Task 2.d
+    /* TASK 2.d
 
     Deadlock is a situation where two computer programs sharing the same resource are 
     preventing each other from accessing the resource. This results in both programs 
