@@ -8,7 +8,7 @@ object Main extends App{
         arr = arr :+ i
     }
     println("Task 1.a: List from 1 to 50")
-    println(arr.mkString(","))
+    println("= " + arr.mkString(","))
 
     // TASK 1.b
     def array_sum(arr: Array[Int]) : Int = {
@@ -19,7 +19,7 @@ object Main extends App{
         running_total
     }
     println("Task 1.b: Sum of array using for loop")
-    println(array_sum(arr))
+    println("= " + array_sum(arr))
 
     // TASK 1.c
     def array_sum_rec(arr: Array[Int]) : Int = {
@@ -31,7 +31,7 @@ object Main extends App{
 
     }
     println("Task 1.c: Sum of array using recursion")
-    println(array_sum_rec(arr))
+    println("= " + array_sum_rec(arr))
 
     // TASK 1.d
     def fib_num(n: Int) : BigInt = {
@@ -46,7 +46,8 @@ object Main extends App{
         }
     }
     println("Task 1.d: Computing the nth Fibonacci number, n=10")
-    println(fib_num(10))
+    println("= " + fib_num(10))
+    
     /*
     BigInt has no practical limit. It allocates as much memory as needed. 
     In theory the size is limited to Integer.MAX_VALUE bits, but the 
@@ -54,7 +55,7 @@ object Main extends App{
     a limitation on 32 bit which can generate values from -2^-31 to (2^31)-1
      */
     
-    //Task 2a
+    //Task 2.a
     def returnThread(body: =>Unit): Thread = {
         val t = new Thread {
             override def run() = body
@@ -62,43 +63,53 @@ object Main extends App{
         t 
     }
 
-    /* 
-    Two possibilities. Using synchronized or AtomicInteger. In the 
-    implementation Atomic integer is used, but the function head using 
-    synchronized is showed in the comment below.
-    */
+
+    /* Task 2.c
+
+    There are at least two ways to make the function thread safe. Using synchronized or AtomicInteger. 
+    In the implementation Atomic integer is used, but the function head using 
+    synchronized is showed in the comment below. */
+
     //def increaseCounter(): Unit = this.synchronized {  
     def increaseCounter(): Unit = {
         counter.addAndGet(1)
     }
-
+    
     private var counter: AtomicInteger = new AtomicInteger(123)
 
-    val thrd1 = returnThread(increaseCounter())
-    val thrd2 = returnThread(increaseCounter())
-    val thrd3 = returnThread({println("Counter: " + counter)})
+    
+    //Task 2.b
+    println("Task 2.b: Printing counter")
+    def printCounter() : Unit = {
+        val thrd1 = returnThread(increaseCounter())
+        val thrd2 = returnThread(increaseCounter())
+        val thrd3 = returnThread({println("=> Counter: " + counter)})
 
-    thrd1.start
-    thrd2.start
-    thrd3.start
+        thrd1.start
+        thrd2.start
+        thrd3.start
+    }
+
+    printCounter()
+   
 
     /* What we are seeing is that the functions gets called in different order, and this 
     results in different results when printing the value. This phenomenon is called 
     inconsistent retrieval. To prevent this in this example it will not help to use 
     syncronized or atomicity, but we have to use join to make sure the two threads that 
-    increment the value is finished before the value is printed. */
+    increment the value is finished before the value is printed. 
 
-    /*
     A situation where it can be problematic is in bank. If two different accounts 
     are trying to make a transaction to the same account simultaneously, they both 
     add a new value to the same initial value. This can lead to some of the money 
     getting lost in transaction because the account balance isn't updated in-between 
     the two transactions. And one of them is transferring to the account with a wrong 
     assumption of what the current account balance is because it hasn't been updated.
-    This is also called "lost update".
-    */
+    This is also called "lost update". */
 
-    /*
+
+    /* Task 2.d
+
     Deadlock is a situation where two computer programs sharing the same resource are 
     preventing each other from accessing the resource. This results in both programs 
     ceasing to function. To prevent deadlock we can use one of the four conditions:
@@ -113,6 +124,7 @@ object Main extends App{
         that processes request resources only in strictly increasing or decreasing order.
     */
 
+    //Deadlock example 
     def deadlock() = {
         lazy val A : Int = B
         lazy val B : Int = A 
@@ -120,7 +132,7 @@ object Main extends App{
         Ta.start()
     }
 
-    //To activate the deadlock
+    //To activate the deadlock, remove '//' under 
     //deadlock()
     
 }
