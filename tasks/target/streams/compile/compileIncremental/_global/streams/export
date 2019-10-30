@@ -1,1 +1,1 @@
-scalac -bootclasspath /home/simen/.sbt/boot/scala-2.12.10/lib/scala-library.jar -classpath /home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/tasks/target/scala-2.12/classes /home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/tasks/tasks.scala
+scalac -bootclasspath /Users/Jorgen/.sbt/boot/scala-2.12.10/lib/scala-library.jar -classpath /Users/Jorgen/Google_Drive/Programmering/Scala_project/tasks/target/scala-2.12/classes /Users/Jorgen/Google_Drive/Programmering/Scala_project/tasks/tasks.scala

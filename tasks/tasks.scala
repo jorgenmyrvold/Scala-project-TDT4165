@@ -4,10 +4,10 @@ import java.util.concurrent.atomic.AtomicInteger
 object Main extends App{
     // TASK 1.a
     var arr = Array.emptyIntArray
-    for (i <- 0 to 50){
+    for (i <- 1 to 50){
         arr = arr :+ i
     }
-    println("Task 1.a: List from 1 to 50")
+    println("\nTask 1.a: List from 1 to 50")
     println("= " + arr.mkString(","))
 
     // TASK 1.b
@@ -18,7 +18,7 @@ object Main extends App{
         }
         running_total
     }
-    println("Task 1.b: Sum of array using for loop")
+    println("\nTask 1.b: Sum of array using for loop")
     println("= " + array_sum(arr))
 
     // TASK 1.c
@@ -30,7 +30,7 @@ object Main extends App{
         }
 
     }
-    println("Task 1.c: Sum of array using recursion")
+    println("\nTask 1.c: Sum of array using recursion")
     println("= " + array_sum_rec(arr))
 
     // TASK 1.d
@@ -45,7 +45,7 @@ object Main extends App{
             fib_num(n-1) + fib_num(n-2)
         }
     }
-    println("Task 1.d: Computing the nth Fibonacci number, n=10")
+    println("\nTask 1.d: Computing the nth Fibonacci number, n=10")
     println("= " + fib_num(10))
     
     /*
@@ -79,7 +79,7 @@ object Main extends App{
 
     
     //TASK 2.b
-    println("Task 2.b: Printing counter")
+    println("\nTask 2.b: Printing counter")
     def printCounter() : Unit = {
         val thrd1 = returnThread(increaseCounter())
         val thrd2 = returnThread(increaseCounter())
