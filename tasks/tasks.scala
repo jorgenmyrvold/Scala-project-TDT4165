@@ -51,8 +51,8 @@ object Main extends App{
     /*
     BigInt has no practical limit. It allocates as much memory as needed. 
     In theory the size is limited to Integer.MAX_VALUE bits, but the 
-    available recoursses on the machine sets the limit in pracis. Int has 
-    a limitation on 32 bit which can generate values from -2^-31 to (2^31)-1
+    available recoursses on the machine sets the limit in practice. Int has 
+    a limitation on 32 bit which can generate values from -2^31 to (2^31)-1
      */
     
     //TASK 2.a
@@ -67,8 +67,8 @@ object Main extends App{
     /* TASK 2.c
 
     There are at least two ways to make the function thread safe. Using synchronized or AtomicInteger. 
-    In the implementation Atomic integer is used, but the function head using 
-    synchronized is showed in the comment below. */
+    In the implementation Atomic integer is used below, but the function head using 
+    synchronized is showed in the comment underneath. */
 
     //def increaseCounter(): Unit = this.synchronized {  
     def increaseCounter(): Unit = {
@@ -114,7 +114,7 @@ object Main extends App{
     preventing each other from accessing the resource. This results in both programs 
     ceasing to function. To prevent deadlock we can use one of the four conditions:
     1. Mutual Exclusion - Resources shared such as read-only files do not lead to
-        deadlocks but resources, such as printers and tape drives, requires exclusive 
+        deadlocks, but resources, such as printers and tape drives, requires exclusive 
         access by a single process.
     2. Hold and Wait - Processes must be prevented from holding one or more resources 
         while simultaneously waiting for one or more others.
