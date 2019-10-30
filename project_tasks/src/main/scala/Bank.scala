@@ -3,38 +3,41 @@ class Bank(val allowedAttempts: Integer = 3) {
     private var transactionsQueue: TransactionQueue = new TransactionQueue()
     private var processedTransactions: TransactionQueue = new TransactionQueue()
 
-    // Task 2: Creating the bank
+
+    // Create a Transaction object and adds it to the transaction queue.
+    // Spawns a thread to process the transaction and starts it.
+
     def addTransactionToQueue(from: Account, to: Account, amount: Double): Unit = {
-        val transaction = new Transaction(transactionsQueue,        // create a new transaction object
+        val transaction = new Transaction(transactionsQueue,
                                           processedTransactions,
                                           from,
                                           to,
                                           amount,
                                           allowedAttempts)
-        transactionsQueue.push(transaction)                               // and put it in the queue
-        val thrd = new Thread{override def run() = processTransactions}   // spawn a thread that calls processTransactions
+        transactionsQueue.push(transaction)
+        val thrd = new Thread{override def run() = processTransactions}  // spawn a thread that calls processTransactions
         thrd.start
     }
+
+
+    // Processes the first transaction in the TransactionQueue. Tries to complete
+    // the transaction by spawning a thread with transaction which does the transaction.
 
     private def processTransactions: Unit = {
         val transaction = transactionsQueue.pop     
-        val thrd = new Thread(transaction)
+        val thrd = new Thread(transaction)    // Spawns a thread calling run from transaction which contains doTransaction.
         thrd.start
         thrd.join
-        if (transaction.status == TransactionStatus.PENDING){
-            transactionsQueue.push(transaction)
-            processTransactions
+        if (transaction.status == TransactionStatus.PENDING){  // If the transaction is not finished
+            transactionsQueue.push(transaction)                // it is pushed back onto the queue
+            processTransactions                                // and processed again.
         }
-        else {
-            processedTransactions.push(transaction)
+        else {                                          // If it is finished
+            processedTransactions.push(transaction)     // it is pushed onto processed transaction.
         }
     }
-    
-        // Function that pops a transaction from the queue
-        // and spawns a thread to execute the transaction.
-        // Finally do the appropriate thing, depending on whether
-        // the transaction succeeded or not
 
+    // Creates a new account in this bank with initial balance
     def addAccount(initialBalance: Double): Account = {
         new Account(this, initialBalance)
     }

@@ -1,10 +1,10 @@
-[0m[[0m[33mwarn[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/main/scala/Account.scala:18:24: Adaptation of argument list by inserting () is deprecated: this is unlikely to be what you want.[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/Jorgen/Google_Drive/Programmering/Scala_project/project_tasks/src/main/scala/Account.scala:14:24: Adaptation of argument list by inserting () is deprecated: this is unlikely to be what you want.[0m
 [0m[[0m[33mwarn[0m] [0m[0m        signature: Left.apply[A, B](value: A): scala.util.Left[A,B][0m
 [0m[[0m[33mwarn[0m] [0m[0m  given arguments: <none>[0m
 [0m[[0m[33mwarn[0m] [0m[0m after adaptation: Left((): Unit)[0m
 [0m[[0m[33mwarn[0m] [0m[0m            return Left() [0m
 [0m[[0m[33mwarn[0m] [0m[0m                       ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m/home/simen/Skole/Programmeringsspråk/Scala-project-TDT4165/project_tasks/src/main/scala/Account.scala:27:24: Adaptation of argument list by inserting () is deprecated: this is unlikely to be what you want.[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/Jorgen/Google_Drive/Programmering/Scala_project/project_tasks/src/main/scala/Account.scala:24:24: Adaptation of argument list by inserting () is deprecated: this is unlikely to be what you want.[0m
 [0m[[0m[33mwarn[0m] [0m[0m        signature: Left.apply[A, B](value: A): scala.util.Left[A,B][0m
 [0m[[0m[33mwarn[0m] [0m[0m  given arguments: <none>[0m
 [0m[[0m[33mwarn[0m] [0m[0m after adaptation: Left((): Unit)[0m

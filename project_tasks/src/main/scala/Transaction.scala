@@ -18,7 +18,7 @@ class TransactionQueue {
     }
 
     // Return whether the queue is empty
-    def isEmpty: Boolean = this.synchronized {
+    def isEmpty: Boolean = {
         !TransQueue.nonEmpty 
     }
 
@@ -28,12 +28,12 @@ class TransactionQueue {
     }
 
     // Return the first element from the queue without removing it
-    def peek: Transaction = this.synchronized {
+    def peek: Transaction = {
         TransQueue.head
     }
 
     // Return an iterator to allow you to iterate over the queue
-    def iterator: Iterator[Transaction] = this.synchronized {
+    def iterator: Iterator[Transaction] = {
         TransQueue.iterator
 
     }
@@ -44,39 +44,36 @@ class Transaction(val transactionsQueue: TransactionQueue,
                   val from: Account,
                   val to: Account,
                   val amount: Double,
-                  val allowedAttemps: Int) extends Runnable {
+                  val allowedAttempts: Int) extends Runnable {
 
     var status: TransactionStatus.Value = TransactionStatus.PENDING
     var attempt = 0
 
     override def run: Unit = {
 
-        def doTransaction() = {
-            if (this.attempt < this.allowedAttemps) {
+        // doTransaction performes the transaction. Transfers money and handles 
+        // errors if they occur. doTransaction is syncronized which means that
+        // no other function can edit the transaction while it is beeing processed
+
+        def doTransaction() = this.synchronized {
+            if (this.attempt < this.allowedAttempts) {
                 val resultWithdraw = this.from.withdraw(amount)
                 resultWithdraw match {
-                    case Right(error) => {this.attempt += 1}
-                    case Left(unit) => {this.to.deposit(amount)   // deposit should not fail because check in withdraw
-                                        this.status = TransactionStatus.SUCCESS}
+                    case Right(error) => {this.attempt += 1}        // If withdraw fails, increment attempts
+                    case Left(success) => {this.to.deposit(amount)  // If withdraw succeeds so will deposit. The condition for deposit to succeed is checked for in withdraw.
+                                           this.status = TransactionStatus.SUCCESS}
                 }
             }
-            else {
-                this.status = TransactionStatus.FAILED
+            else {                                      // When a transaction has tries more than allowed attempts
+                this.status = TransactionStatus.FAILED  // it's status is set to FAILED.
             }
-            // Task 3
-            // Extend this method to satisfy requirements.
-            // from withdraw amount
-            // to deposit amount
         }
 
-        // Task 3
-        // make the code below thread safe
-        if (status == TransactionStatus.PENDING) {
+        // While the transaction is not finished it tries again to process
+        // it. It tries as long as it has tries less then allowedAttempts
+        if (status == TransactionStatus.PENDING) { 
             doTransaction
-            Thread.sleep(50) // you might want this to make more room for
-            // new transactions to be added to the queue
+            Thread.sleep(50)
         }
-
-
     }
 }
