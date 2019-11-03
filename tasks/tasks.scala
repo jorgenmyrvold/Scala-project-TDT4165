@@ -110,18 +110,13 @@ object Main extends App{
 
     /* TASK 2.d
 
-    Deadlock is a situation where two computer programs sharing the same resource are 
-    preventing each other from accessing the resource. This results in both programs 
-    ceasing to function. To prevent deadlock we can use one of the four conditions:
-    1. Mutual Exclusion - Resources shared such as read-only files do not lead to
-        deadlocks, but resources, such as printers and tape drives, requires exclusive 
-        access by a single process.
-    2. Hold and Wait - Processes must be prevented from holding one or more resources 
-        while simultaneously waiting for one or more others.
-    3. No Preemption - Preemption of process resource allocations can avoid the condition 
-        of deadlocks, where ever possible.
-    4. Circular Wait - Circular wait can be avoided if we number all resources, and require 
-        that processes request resources only in strictly increasing or decreasing order.
+   
+    Deadlock is a situation where a set of threads are waiting for each other to release the resource they need and end up getting stuck for infinite time.
+    According to Edward G. Coffman, Jr. we must eliminate one or more of these four conditions to prevent a deadlock: 
+    1. Mutual Exclusion - Removing the mutual exclusion condition means that no process will have exclusive access to a resource. Hard to prevent in practice.
+    2. Hold and Wait - Processes must be prevented from holding one or more resources while simultaneously waiting for one or more others.
+    3. No Preemption - No preemption means that only the process holding a resource can release it. If we can stop the process from holding that resource we avoid deadlocks. 
+    4. Circular Wait - Circular wait can be avoided if we number all resources, and require that processes request resources only in strictly increasing or decreasing order.
     */
 
     //Deadlock example 
