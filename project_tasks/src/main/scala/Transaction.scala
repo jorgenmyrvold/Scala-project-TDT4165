@@ -69,8 +69,8 @@ class Transaction(val transactionsQueue: TransactionQueue,
             }
         }
 
-        // While the transaction is not finished it tries again to process
-        // it. It tries as long as it has tries less then allowedAttempts
+        // While the transaction is not finished it tries again to process it. 
+        // It tries as long as it has tries less then allowedAttempts
         if (status == TransactionStatus.PENDING) { 
             doTransaction
             Thread.sleep(50)
